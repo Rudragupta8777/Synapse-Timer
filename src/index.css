@@ -15,3 +15,7 @@ code {
 .font{
   font-size: 12rem;
 }
+
+.background{
+  background: url(1.png);
+}

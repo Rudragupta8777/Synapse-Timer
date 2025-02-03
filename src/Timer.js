@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TimerInput from './TimerInput';
 import TimerDisplay from './TimerDisplay';
-
+import image from "./1.png"
 const Timer = () => {
   const [targetDateTime, setTargetDateTime] = useState('');
   const [timeLeft, setTimeLeft] = useState(0);
@@ -49,9 +49,8 @@ const Timer = () => {
 
   return (
     <div 
-      style={{
-        backgroundColor: background, 
-        backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none', 
+      style={{ 
+        backgroundImage: `url(${image})` , 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         minHeight: '100vh', 
